@@ -1,0 +1,5 @@
+function resultsGenerator() {
+  let resultsString = "";
+  
+
+}
