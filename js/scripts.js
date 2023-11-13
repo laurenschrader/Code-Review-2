@@ -1,5 +1,3 @@
-console.log("before")
-
 window.addEventListener("load", function () {
   console.log("after load")
 
@@ -45,7 +43,7 @@ window.addEventListener("load", function () {
 
     if (yesCounter >= 2) {
       document.querySelector(".result").textContent = "You should study Python.";
-    } else {
+    } else if (yesCounter < 2) {
       document.querySelector(".result").textContent = "You should study C++";
     }
 
