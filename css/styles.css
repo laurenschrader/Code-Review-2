@@ -33,6 +33,11 @@
   background-color: blueviolet;
 }
 
+.hidden {
+  display: none;
+  background-color: aqua;
+}
+
 .question {
   color:red;
 }
