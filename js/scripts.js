@@ -34,16 +34,21 @@ window.addEventListener("load", function () {
     // check each question value:
     const question1 = document.querySelector('input[name="question1"]:checked');
     const question2 = document.querySelector('input[name="question2"]:checked');
+    const question3 = document.querySelector('input[name="question2"]:checked');
 
     //sum up total yes counts:
     if (question1 && question1.value === 'yes') yesCounter++;
     if (question2 && question2.value === 'yes') yesCounter++;
+    if (question3 && question3.value === 'yes') yesCounter++;
 
     console.log(yesCounter);
-
-    if (yesCounter >= 2) {
+//if all yes: python. if 2 yes: c++. if 1 yes, Ruby.
+    if (yesCounter == 3) {
       document.querySelector(".result").textContent = "You should study Python.";
-    } else if (yesCounter < 2) {
+    } else if (yesCounter == 2) {
+      document.querySelector(".result").textContent = "You should study C++";
+    }
+    else if (yesCounter ==1) {
       document.querySelector(".result").textContent = "You should study C++";
     }
 
