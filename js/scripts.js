@@ -1,7 +1,7 @@
 // function to reset form (still need to add button
 function resetForm() {
   formQuestions.reset();
-  
+
   console.log("form reset")
   document.querySelector("#result").classList.add("hidden");
   document.querySelector("#resetButton").classList.add("hidden");
@@ -9,7 +9,7 @@ function resetForm() {
   //hide all q's except for first:
   const allQuestions = document.querySelectorAll(".form-group");
 
-  allQuestions.forEach(function(question, index) {
+  allQuestions.forEach(function (question, index) {
     if (index === 0) {
       question.classList.remove("hidden");
     }
@@ -61,23 +61,33 @@ window.addEventListener("load", function () {
     const question1 = document.querySelector('input[name="question1"]:checked');
     const question2 = document.querySelector('input[name="question2"]:checked');
     const question3 = document.querySelector('input[name="question3"]:checked');
+    const question4 = document.querySelector('input[name="question4"]:checked');
+    const question5 = document.querySelector('input[name="question5"]:checked');
 
     //sum up total yes counts:
     if (question1 && question1.value === 'yes') yesCounter++;
     if (question2 && question2.value === 'yes') yesCounter++;
     if (question3 && question3.value === 'yes') yesCounter++;
+    if (question4 && question4.value === 'yes') yesCounter++;
+    if (question5 && question5.value === 'yes') yesCounter++;
 
     console.log(yesCounter);
-    //if all yes: python. if 2 yes: c++. if 1 yes, Ruby.
-    if (yesCounter == 3) {
-      document.querySelector("#result").textContent = "You should study Python.";
-    } else if (yesCounter == 2) {
-      document.querySelector("#result").textContent = "You should study C++";
+    //if all 5 yes: python. if 4 yes: c++. if 3 yes, Ruby. if 2 yes, ruby and c++. 
+    //if 1 yes: you should really reconsider this whole programming thing..
+    if (yesCounter == 5) {
+      document.querySelector("#result").textContent = "You should study Python!";
+    } else if (yesCounter == 4) {
+      document.querySelector("#result").textContent = "You should study C++!";
+    }
+    else if (yesCounter == 3) {
+      document.querySelector("#result").textContent = "You should study Ruby!";
+    }
+    else if (yesCounter == 2) {
+      document.querySelector("#result").textContent = "You should study Ruby and C++!";
     }
     else if (yesCounter == 1) {
-      document.querySelector("#result").textContent = "You should study Ruby";
+      document.querySelector("#result").textContent = "You should really reconsider this whole programming thing..";
     }
-
     document.querySelector("#result").classList.remove("hidden");
     document.querySelector("#resetButton").classList.remove("hidden");
   });
