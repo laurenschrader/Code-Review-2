@@ -2,7 +2,7 @@
 
 #### By _**Lauren Schrader**_
 
-#### _A 5-question form, where users can determine which programming language they should learn._
+#### _A 5-question form, where users can determine which of the following programming languages they should learn: **Python**, **C++**, **Ruby**, or **C#**._
 
 ## Technologies Used
 
@@ -13,19 +13,38 @@
 
 ## Description
 
-_This interactive form helps users decide on which programming language to learn. The user will answer 5 simple question. Based on the answers, this application will give the user a personalized language recommendation._
+_This interactive form helps users decide which programming language to learn, between **Python**, **C++**, **Ruby**, and **C#**._
 
-_Although some of the questions may **seem** entirely unrelated to programming, this survey will nonetheless provide users with invaluable guidance in selecting their very first programming language._
+_The user will answer 5 simple question. Based on these answers, the application will give the user a personalized programming language recommendation._
+
+_Although some of the questions may **seem** entirely unrelated to programming, this survey will nonetheless provide users with invaluable and sound guidance, in selecting a programming language._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+To use this application, users have 2 options: 
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+#### 1. Visit the Live Webpage:
+
+Simply click [here](https://laurenschrader.github.io/Code-Review-2/), to be redirected to the live survey webpage application.
+
+#### 2. Run on Your Local Server:
+
+Run this program on your own local server, by following these steps:
+
+* **Clone this repository:** 
+  1. On this page, click the green "code" button. 
+  2. Within the pop-up, copy the HTTPS URL. 
+  3. Now, in your terminal, navigate to your desktop.
+  4. Type 'git clone', immediately followed by the URL.
+  5. Type 'cd Code-Review-2', to navigate into the folder.
+
+  * **Open Project** 
+  1. Then, type 'code .' to open the project. 
+  2. Once opened, right click inside the index.html file, and select "Open with Live Server". 
+  
+  _This will redirect to your browser, where you can use the application._
+
+  _**Note:** Ensure you have VSCode and a web browser installed, to run this application._
 
 ## Known Bugs
 
