@@ -9,22 +9,19 @@
 
 <body>
   <form id="formQuestions">
-    <div class="form-group">
-
+    <div class="form-group" id="question1">
       <p>Do you like programming?</p>
       <label><input type="radio" name="question1" value="yes"> Yes</label>
       <label><input type="radio" name="question1" value="no"> No</label>
+      <button type="button" class="nextButton" data-target="#question2">Next</button>
     </div>
-    <button type="submit" id="submit-button">Submit</button>
+
+    <div class="form-group hidden" id="question2">
+      <p>Do you like the color pink?</p>
+      <button type="submit" id="submit-button">Submit</button>
+    </div>
   </form>
 
-  <div class="result">
-
-    <p>
-      Hello World
-    </p>
-  </div>
-
+  <div id="result" class="hidden"></div>
 </body>
-
 </html>
