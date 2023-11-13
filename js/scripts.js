@@ -1,10 +1,22 @@
 // function to reset form (still need to add button
 function resetForm() {
   formQuestions.reset();
+  
   console.log("form reset")
   document.querySelector("#result").classList.add("hidden");
   document.querySelector("#resetButton").classList.add("hidden");
 
+  //hide all q's except for first:
+  const allQuestions = document.querySelectorAll(".form-group");
+
+  allQuestions.forEach(function(question, index) {
+    if (index === 0) {
+      question.classList.remove("hidden");
+    }
+    else {
+      question.classList.add("hidden");
+    }
+  })
 }
 
 window.addEventListener("load", function () {
