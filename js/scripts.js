@@ -4,6 +4,11 @@ function resetForm() {
   document.querySelector("#result").classList.add("hidden");
 }
 
+//event listener for reset click, which then calls reset function:
+document.querySelector("#resetButton").addEventListener("click", function() {
+  resetForm();
+});
+
 window.addEventListener("load", function () {
   console.log("after load")
 
