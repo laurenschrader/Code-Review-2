@@ -1,19 +1,21 @@
-# _{Application Name}_
+# _Programming Language Selector_
 
-#### By _**{List of contributors}**_
+#### By _**Lauren Schrader**_
 
-#### _{Brief description of application}_
+#### _A 5-question form, where users can determine which programming language they should learn._
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* **HTML** - For designing the structure of the form.
+* **CSS** - For styling the content of the form.
+* **Git/GitHub** - For tracking all changes made to the project.
+* **VSCode** - The code editor used for writing all code of the project.
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This interactive form helps users decide on which programming language to learn. The user will answer 5 simple question. Based on the answers, this application will give the user a personalized language recommendation._
+
+_Although some of the questions may **seem** entirely unrelated to programming, this survey will nonetheless provide users with invaluable guidance in selecting their very first programming language._
 
 ## Setup/Installation Requirements
 
