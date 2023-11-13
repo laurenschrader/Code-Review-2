@@ -1,4 +1,15 @@
-#question1 {
+#formQuestions {
   color: rgb(28, 92, 137);
+  background-color: blue;
   text-align: center;
+}
+
+.result{
+  display: none;
+  background-color: blueviolet;
+}
+
+
+.question {
+  color:red;
 }
