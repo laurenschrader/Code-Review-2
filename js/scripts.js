@@ -1,16 +1,19 @@
 // function to reset form (still need to add button
 function resetForm() {
-  form.reset(); 
+  formQuestions.reset();
+  console.log("form reset")
   document.querySelector("#result").classList.add("hidden");
-}
+  document.querySelector("#resetButton").classList.add("hidden");
 
-//event listener for reset click, which then calls reset function:
-document.querySelector("#resetButton").addEventListener("click", function() {
-  resetForm();
-});
+}
 
 window.addEventListener("load", function () {
   console.log("after load")
+
+  //event listener for reset click, which then calls reset function:
+  document.querySelector("#resetButton").addEventListener("click", function () {
+    resetForm();
+  });
 
   const form = document.querySelector("#formQuestions");
   //next button - 1
@@ -53,16 +56,17 @@ window.addEventListener("load", function () {
     if (question3 && question3.value === 'yes') yesCounter++;
 
     console.log(yesCounter);
-//if all yes: python. if 2 yes: c++. if 1 yes, Ruby.
+    //if all yes: python. if 2 yes: c++. if 1 yes, Ruby.
     if (yesCounter == 3) {
-      document.querySelector(".result").textContent = "You should study Python.";
+      document.querySelector("#result").textContent = "You should study Python.";
     } else if (yesCounter == 2) {
-      document.querySelector(".result").textContent = "You should study C++";
+      document.querySelector("#result").textContent = "You should study C++";
     }
     else if (yesCounter == 1) {
-      document.querySelector(".result").textContent = "You should study Ruby";
+      document.querySelector("#result").textContent = "You should study Ruby";
     }
 
-    document.querySelector("div.result").removeAttribute("class");
+    document.querySelector("#result").classList.remove("hidden");
+    document.querySelector("#resetButton").classList.remove("hidden");
   });
 });
