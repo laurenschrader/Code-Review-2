@@ -1,3 +1,9 @@
+// function to reset form (still need to add button
+function resetForm() {
+  form.reset(); 
+  document.querySelector("#result").classList.add("hidden");
+}
+
 window.addEventListener("load", function () {
   console.log("after load")
 
@@ -34,7 +40,7 @@ window.addEventListener("load", function () {
     // check each question value:
     const question1 = document.querySelector('input[name="question1"]:checked');
     const question2 = document.querySelector('input[name="question2"]:checked');
-    const question3 = document.querySelector('input[name="question2"]:checked');
+    const question3 = document.querySelector('input[name="question3"]:checked');
 
     //sum up total yes counts:
     if (question1 && question1.value === 'yes') yesCounter++;
@@ -48,8 +54,8 @@ window.addEventListener("load", function () {
     } else if (yesCounter == 2) {
       document.querySelector(".result").textContent = "You should study C++";
     }
-    else if (yesCounter ==1) {
-      document.querySelector(".result").textContent = "You should study C++";
+    else if (yesCounter == 1) {
+      document.querySelector(".result").textContent = "You should study Ruby";
     }
 
     document.querySelector("div.result").removeAttribute("class");
