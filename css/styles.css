@@ -28,7 +28,7 @@
   color: rgb(136, 39, 57);
 }
 
-.result{
+#result{
   display: none;
   background-color: blueviolet;
 }
